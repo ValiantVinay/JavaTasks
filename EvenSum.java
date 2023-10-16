@@ -5,7 +5,6 @@ public class EvenSum {
         while (n <= 100) {
             Sum += n;
             n += 2;
-            
         }
         System.out.println(Sum);
         //Another Method to solve with simple Formula as follows
