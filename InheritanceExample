@@ -1,0 +1,128 @@
+OOPS
+Inheritance Example Code
+class Animal {
+    String name;
+
+    public Animal(String name) {
+        this.name = name;
+    }
+
+    public void speak() {
+        System.out.println(name + " makes a sound");
+    }
+}
+
+class Mammal extends Animal {
+    public Mammal(String name) {
+        super(name);
+    }
+
+    public void giveBirth() {
+        System.out.println(name + " gives birth to live young.");
+    }
+}
+
+class Reptile extends Animal {
+    public Reptile(String name) {
+        super(name);
+    }
+
+    public void layEggs() {
+        System.out.println(name + " lays eggs.");
+    }
+}
+
+class Whale extends Mammal {
+    public Whale(String name) {
+        super(name);
+    }
+
+    @Override
+    public void speak() {
+        System.out.println(name + " makes whale sounds");
+    }
+}
+
+class Dog extends Mammal {
+    public Dog(String name) {
+        super(name);
+    }
+
+    @Override
+    public void speak() {
+        System.out.println(name + " barks");
+    }
+}
+
+class Crocodile extends Reptile {
+    public Crocodile(String name) {
+        super(name);
+    }
+
+    @Override
+    public void speak() {
+        System.out.println(name + " roars");
+    }
+}
+
+class Snake extends Reptile {
+    public Snake(String name) {
+        super(name);
+    }
+
+    @Override
+    public void speak() {
+        System.out.println(name + " hisses");
+    }
+}
+
+class Lion extends Mammal {
+    public Lion(String name) {
+        super(name);
+    }
+
+    @Override
+    public void speak() {
+        System.out.println(name + " roars like a lion");
+    }
+}
+
+class Turtle extends Reptile {
+    public Turtle(String name) {
+        super(name);
+    }
+
+    @Override
+    public void speak() {
+        System.out.println(name + " makes a slow, hissing sound");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Whale whale = new Whale("Whale");
+        Dog dog = new Dog("Dog");
+        Crocodile crocodile = new Crocodile("Crocodile");
+        Snake snake = new Snake("Snake");
+        Lion lion = new Lion("Lion");
+        Turtle turtle = new Turtle("Turtle");
+
+        whale.speak();
+        whale.giveBirth();
+
+        dog.speak();
+        dog.giveBirth();
+
+        crocodile.speak();
+        crocodile.layEggs();
+
+        snake.speak();
+        snake.layEggs();
+
+        lion.speak();
+        lion.giveBirth();
+
+        turtle.speak();
+        turtle.layEggs();
+    }
+}
