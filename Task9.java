@@ -19,6 +19,9 @@ class BankAccount{
             System.out.println("Amount deposited :"+amt);
             System.out.println("Current Balance :"+balance);
         }
+        else{
+            System.out.println("Enter Valid Amount to deposit");
+        }
     }
 
     public void withdraw(double amt2){
