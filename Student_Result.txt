@@ -1,0 +1,5 @@
+Name of Student :Suma Average Marks --->62
+Name of Student :Charan Average Marks --->66
+Name of Student :NagaSai Average Marks --->97
+Name of Student :Vinay Average Marks --->76
+Name of Student :Hash Average Marks --->93
