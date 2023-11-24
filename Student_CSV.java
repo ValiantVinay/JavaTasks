@@ -13,7 +13,7 @@ public class Student_CSV {
             bw.write ("Name of Student :"+line[0]
                     +" Average Marks --->"+
                     ( Integer.parseInt(line[1]) + Integer.parseInt(line[2]) + Integer.parseInt(line[3]))/3 +"\n");
-            System.out.println ("Name of Student :"+line[0]
+            System.out.println ("Name of  Student :"+line[0]
                     +" Average Marks --->"+
                     ( Integer.parseInt(line[1]) + Integer.parseInt(line[2]) + Integer.parseInt(line[3]))/3  );
         }
